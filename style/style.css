@@ -1,0 +1,13 @@
+:root {
+    --background :  hsla(54, 40%, 3%, 1);
+    --accent :      hsla(195, 86%, 64%, 1);
+    --almostWhite : hsla(43, 100%, 98%, 1);
+    --gray:         hsla(42, 100%, 98%, 0.8);
+    --disable:      hsla(42, 100%, 98%, 0.3);
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--almostWhite);
+    background-color: var(--background);
+}
