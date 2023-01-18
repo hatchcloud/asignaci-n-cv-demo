@@ -63,4 +63,15 @@ body {
 .grid-preview{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-preview div {
+    overflow: hidden;
+    height: 36rem;
+}
+.grid-preview div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
