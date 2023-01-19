@@ -41,7 +41,6 @@ body {
 .mb-120 {
     margin-bottom: 100rem;
 }
-
 .p-absolute{
     position: absolute;
 }
@@ -94,8 +93,9 @@ body {
 .menu a:hover {
     color: var(--color-almostWhite);
 }
-.menu a:active {
-    color: var(--color-almostWhite);
+
+.menu a:focus {
+    color: var(--color-accent);
 }
 
 .headline-1{
@@ -123,10 +123,17 @@ body {
     width: 100%;
 }
 
-
-
 .grid-cv{
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 1rem;
+}
+
+.description p,ul li {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-gray);
 }
