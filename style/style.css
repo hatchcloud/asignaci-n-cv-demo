@@ -96,6 +96,7 @@ body {
 
 .menu a:focus {
     color: var(--color-accent);
+    
 }
 
 .headline-1{
