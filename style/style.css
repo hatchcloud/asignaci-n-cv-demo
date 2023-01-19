@@ -1,7 +1,7 @@
 :root {
     --color-background :  hsla(54, 40%, 3%, 1);
     --color-accent :      hsla(195, 86%, 64%, 1);
-    --color-almostWhite : hsla(43, 100%, 98%, 1);
+    --color-almostWhite :  hsla(42, 100%, 98%, 1);
     --color-gray:         hsla(42, 100%, 98%, 0.8);
     --color-disable:      hsla(42, 100%, 98%, 0.3);
 }
@@ -10,6 +10,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-padding-top: 0rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,12 +35,44 @@ body {
 .mt-40 {
     margin-top: 4rem;
 }
+.mt-80 {
+    margin-top: 8rem;
+}
+.mb-120 {
+    margin-bottom: 60rem;
+}
 
+.p-absolute{
+    position: absolute;
+}
+.p-fixed{
+    position: fixed;
+}
 
+.space-grotesk {
+    font-family: 'Space Grotesk';
+    font-style: normal;    
+}
+
+.about-me p span{
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.scroll-margin{
+    scroll-margin-block-start: 6rem;
+}
 
 .container {
     width: 90%;
     max-width: 130rem;
+    position: relative;
+    display: flex;
+}
+
+.content{
+    margin-left: 25rem;
 }
 
 .layout{
@@ -49,6 +82,20 @@ body {
 .menu{
     display: flex;
     flex-direction: column;
+}
+
+.menu a {
+    font-weight: 500;
+    letter-spacing: -0.08rem;
+    text-decoration: none;
+    color: var(--color-disable);
+}
+
+.menu a:hover {
+    color: var(--color-almostWhite);
+}
+.menu a:active {
+    color: var(--color-almostWhite);
 }
 
 .headline-1{
@@ -74,4 +121,12 @@ body {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+
+
+.grid-cv{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
 }
